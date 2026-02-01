@@ -1,4 +1,4 @@
-# LightGUIAgent 🤖
+# LightGUIAgent
 
 > Lightweight GUI Automation Agent with Grid-Based Visual Grounding
 
@@ -10,17 +10,17 @@
 
 **Core Innovation**: Divides the screen into a 10×20 grid (similar to chess notation), allowing the model to output "E5" instead of complex pixel coordinates.
 
-## ✨ Key Features
+## Key Features
 
-- **🎯 Grid Coordinate System**: 10×20 grid (A-J × 1-20) instead of pixel coordinates
-- **🧠 Claude Opus 4.5**: State-of-the-art vision model for UI understanding
-- **👁️ Visual Context Memory**: Includes previous step's marked screenshot for better decision-making
-- **🌏 Multilingual Support**: Supports Chinese, English, and other languages with perfect input handling
-- **⚡ Fast**: 5-8s per step (vs 24-30s with local models)
-- **💾 Lightweight**: 200MB RAM (vs 10GB for local models)
-- **🚀 Easy Deploy**: No GPU needed, just Python + API key
+- **Grid Coordinate System**: 10×20 grid (A-J × 1-20) instead of pixel coordinates
+- **Claude Opus 4.5**: State-of-the-art vision model for UI understanding
+- **Visual Context Memory**: Includes previous step's marked screenshot for better decision-making
+- **Multilingual Support**: Supports Chinese, English, and other languages with perfect input handling
+- **Fast**: 5-8s per step (vs 24-30s with local models)
+- **Lightweight**: 200MB RAM (vs 10GB for local models)
+- **Easy Deploy**: No GPU needed, just Python + API key
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.12+
 - [uv](https://github.com/astral-sh/uv) package manager
@@ -28,7 +28,7 @@
 - [ADB](https://developer.android.com/studio/command-line/adb) (Android Debug Bridge)
 - Claude API key from [Anthropic](https://console.anthropic.com/)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -80,9 +80,9 @@ cp config.example.yaml config.yaml
 ```
 
 **Auto-detected:**
-- 📱 Device name (via ADB)
-- 📐 Screen size (via ADB)
-- 🎯 Grid density (calculated for ~108×120px cells)
+- Device name (via ADB)
+- Screen size (via ADB)
+- Grid density (calculated for ~108×120px cells)
 
 **Configurable:**
 - Grid cols/rows (override auto-calculation)
@@ -91,7 +91,7 @@ cp config.example.yaml config.yaml
 - Inner coordinate labels (show labels inside grid cells)
 - Claude API parameters
 
-## 🎮 Usage Examples
+## Usage Examples
 
 ### Example 1: Xiaohongshu (Chinese)
 
@@ -111,7 +111,7 @@ make run TASK="打开小红书，发布一个post，内容是 '大家好,我是L
 
 https://github.com/ReScienceLab/LightGUIAgent/releases/download/untagged-838af5b8d906ee80fc4d/LightGUIAgent-Demo-1.mp4
 
-**📸 Step-by-Step Screenshots:**
+**Step-by-Step Screenshots:**
 
 <table>
   <tr>
@@ -148,7 +148,7 @@ make run TASK="Open X，post 'Hi, this post is from LightGUIAgent'"
 
 https://github.com/ReScienceLab/LightGUIAgent/releases/download/untagged-838af5b8d906ee80fc4d/LightGUIAgent-Demo-2.mp4
 
-**📸 Step-by-Step Screenshots:**
+**Step-by-Step Screenshots:**
 
 <table>
   <tr>
@@ -209,16 +209,16 @@ make test              # Test grid system
 make test-verbose      # Test with verbose output
 ```
 
-## 📊 Example Output
+## Example Output
 
 ```
 ======================================================================
-🚀 LightGUIAgent - Intelligent GUI Automation
+LightGUIAgent - Intelligent GUI Automation
 ======================================================================
-📋 Task: Open X，post 'Hi, this post is from LightGUIAgent'
-🤖 Model: Claude Opus 4.5
-🎯 Grid: 10×20 coordinate system (A-J, 1-20)
-📁 Log: logs/task_20260202_145623/session.jsonl
+Task: Open X，post 'Hi, this post is from LightGUIAgent'
+Model: Claude Opus 4.5
+Grid: 10×20 coordinate system (A-J, 1-20)
+Log: logs/task_20260202_145623/session.jsonl
 ======================================================================
 
 LLM Claude Opus 4.5 inference time: 6.18 seconds
@@ -244,10 +244,10 @@ Step 3/50 done. Action: TYPE "Hi, this post is from LightGUIAgent"
 
 ...
 
-✅ Task Completed Successfully!
+Task Completed Successfully!
 
 ============================================================
-📊 Execution Summary
+Execution Summary
 ============================================================
 Steps completed: 6
 Time elapsed:    45.3s
@@ -255,11 +255,11 @@ Avg per step:    7.6s
 Fastest step:    5.9s
 Slowest step:    8.2s
 
-📊 Logger Summary:
+Logger Summary:
    Total events: 28
    Log file: logs/task_20260202_145623/9a3b7c21-4d5e-4a2b-8f3d-2c1e5b6a9d7f.jsonl
 
-💰 Cost Summary
+Cost Summary
 ==================================================
 Input tokens:  8,420
 Output tokens: 624
@@ -271,19 +271,19 @@ Total cost:    $0.0577
 ==================================================
 ```
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 | Metric | Local Models (4B) | LightGUIAgent | Improvement |
 |--------|------------------|---------------|-------------|
-| **Speed** | 24-30s/step | **5-8s/step** | ⚡ **3-4x faster** |
-| **Deployment** | 2 hours | **5 minutes** | 🚀 **24x faster** |
-| **Memory** | 10GB | **200MB** | 💾 **50x less** |
-| **Accuracy** | ~73% | **~80-85%*** | 📈 **+10%** |
-| **Cost** | $0 (GPU required) | **$0.05-0.15/task** | 💰 **Pay-as-you-go** |
+| **Speed** | 24-30s/step | **5-8s/step** | **3-4x faster** |
+| **Deployment** | 2 hours | **5 minutes** | **24x faster** |
+| **Memory** | 10GB | **200MB** | **50x less** |
+| **Accuracy** | ~73% | **~80-85%*** | **+10%** |
+| **Cost** | $0 (GPU required) | **$0.05-0.15/task** | **Pay-as-you-go** |
 
 \* Estimated based on Claude Opus 4.5 capabilities
 
-## 🎯 Grid System
+## Grid System
 
 ### Overview
 
@@ -304,13 +304,13 @@ The screen is divided into a **10×20 grid** for easy coordinate reference:
 ```
    A    B    C    D    E    F    G    H    I    J
  ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
-1│    │    │    │ 🔍 │    │    │    │    │    │    │ ← Search
+1│    │    │    │ [S]│    │    │    │    │    │    │ ← Search
  ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
 2│    │    │    │    │    │    │    │    │    │    │
  ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
 3│    │  [Button]  │    │    │    │    │    │    │   ← UI Element
  ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
-4│ 📱 │    │    │    │ 📧 │    │    │    │    │    │ ← Apps
+4│[App]   │    │    │[Mail]  │    │    │    │    │ ← Apps
  ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
 ...
 ```
@@ -334,7 +334,7 @@ grid:
 
 This helps Claude identify coordinates in the center of the screen without needing to infer from edge labels.
 
-## 🔧 Architecture
+## Architecture
 
 ### Components
 
@@ -367,7 +367,7 @@ This helps Claude identify coordinates in the center of the screen without needi
 5. **COMPLETE** - Mark task as successfully completed
 
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### API Key Issues
 
@@ -410,7 +410,7 @@ If the agent repeatedly clicks the same position:
 - Check `delay_after_action` in config (increase if UI transitions are slow)
 - Review marked screenshots to see if UI actually changed
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 LightGUIAgent/
@@ -439,12 +439,12 @@ LightGUIAgent/
 └── README.md
 ```
 
-## 📚 References
+## References
 
 - [Claude API Documentation](https://docs.anthropic.com/)
 - [ADB Documentation](https://developer.android.com/studio/command-line/adb)
 - [uv Package Manager](https://github.com/astral-sh/uv)
 
-## 📝 License
+## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
