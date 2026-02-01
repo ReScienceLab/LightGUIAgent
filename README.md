@@ -8,6 +8,7 @@
 [![uv](https://img.shields.io/badge/uv-managed-green.svg)](https://github.com/astral-sh/uv)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white)](https://discord.gg/3BmDnDPcM6)
 [![WeChat](https://img.shields.io/badge/WeChat-Community-07C160?logo=wechat&logoColor=white)](#wechat-community)
+[![简体中文](https://img.shields.io/badge/文档-简体中文-red.svg)](README_ZH.md)
 
 **Core Innovation**: Divides the screen into a 10×20 grid (similar to chess notation), allowing the model to output "E5" instead of complex pixel coordinates.
 
