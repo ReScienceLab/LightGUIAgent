@@ -109,14 +109,7 @@ make run TASK="打开小红书，发布一个post，内容是 '大家好,我是L
 
 **Demo Video:**
 
-https://github.com/ReScienceLab/LightGUIAgent/assets/LightGUIAgent-Demo-1.mp4
-
-<details>
-<summary>📹 Alternative: Download demo video</summary>
-
-[Download Demo Video 1](https://github.com/ReScienceLab/LightGUIAgent/raw/main/examples/LightGUIAgent-Demo-1.mp4)
-
-</details>
+https://github.com/ReScienceLab/LightGUIAgent/releases/download/untagged-838af5b8d906ee80fc4d/LightGUIAgent-Demo-1.mp4
 
 **📸 Step-by-Step Screenshots:**
 
@@ -153,14 +146,7 @@ make run TASK="Open X，post 'Hi, this post is from LightGUIAgent'"
 
 **Demo Video:**
 
-https://github.com/ReScienceLab/LightGUIAgent/assets/LightGUIAgent-Demo-2.mp4
-
-<details>
-<summary>📹 Alternative: Download demo video</summary>
-
-[Download Demo Video 2](https://github.com/ReScienceLab/LightGUIAgent/raw/main/examples/LightGUIAgent-Demo-2.mp4)
-
-</details>
+https://github.com/ReScienceLab/LightGUIAgent/releases/download/untagged-838af5b8d906ee80fc4d/LightGUIAgent-Demo-2.mp4
 
 **📸 Step-by-Step Screenshots:**
 
