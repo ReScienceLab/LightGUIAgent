@@ -34,7 +34,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/LightGUIAgent.git
+git clone https://github.com/ReScienceLab/LightGUIAgent.git
 cd LightGUIAgent
 
 # Install dependencies (creates .venv automatically)
@@ -109,14 +109,12 @@ make run TASK="打开小红书，发布一个post，内容是 '大家好,我是L
 
 **Demo Video:**
 
-<video src="https://github.com/user-attachments/assets/your-uploaded-video-url-here" controls width="100%"></video>
-
-> **Note**: To enable video playback, upload the video file `examples/LightGUIAgent-Demo-1.mp4` to a GitHub issue/PR comment, then replace the URL above with the generated link.
+https://github.com/ReScienceLab/LightGUIAgent/assets/LightGUIAgent-Demo-1.mp4
 
 <details>
 <summary>📹 Alternative: Download demo video</summary>
 
-[Download Demo Video 1](examples/LightGUIAgent-Demo-1.mp4)
+[Download Demo Video 1](https://github.com/ReScienceLab/LightGUIAgent/raw/main/examples/LightGUIAgent-Demo-1.mp4)
 
 </details>
 
@@ -155,14 +153,12 @@ make run TASK="Open X，post 'Hi, this post is from LightGUIAgent'"
 
 **Demo Video:**
 
-<video src="https://github.com/user-attachments/assets/your-uploaded-video-url-here" controls width="100%"></video>
-
-> **Note**: To enable video playback, upload the video file `examples/LightGUIAgent-Demo-2.mp4` to a GitHub issue/PR comment, then replace the URL above with the generated link.
+https://github.com/ReScienceLab/LightGUIAgent/assets/LightGUIAgent-Demo-2.mp4
 
 <details>
 <summary>📹 Alternative: Download demo video</summary>
 
-[Download Demo Video 2](examples/LightGUIAgent-Demo-2.mp4)
+[Download Demo Video 2](https://github.com/ReScienceLab/LightGUIAgent/raw/main/examples/LightGUIAgent-Demo-2.mp4)
 
 </details>
 
