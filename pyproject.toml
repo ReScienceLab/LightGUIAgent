@@ -1,0 +1,49 @@
+[project]
+name = "lightguiagent"
+version = "0.1.0"
+description = "Lightweight GUI Automation Agent with Grid-Based Visual Grounding"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+
+keywords = ["gui", "automation", "agent", "claude", "vision", "grid", "android", "adb"]
+
+dependencies = [
+    "anthropic>=0.40.0",
+    "jsonlines>=4.0.0",
+    "pillow>=11.0.0",
+    "python-dotenv>=1.2.1",
+    "pyyaml>=6.0",
+    "pydantic>=2.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.8.0",
+    "black>=24.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/LightGUIAgent"
+Repository = "https://github.com/yourusername/LightGUIAgent"
+Documentation = "https://github.com/yourusername/LightGUIAgent#readme"
+Issues = "https://github.com/yourusername/LightGUIAgent/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+exclude = ["bin/"]  # Binary files
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.14",
+]

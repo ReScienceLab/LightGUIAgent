@@ -1,0 +1,73 @@
+# LightGUIAgent Configuration Example
+# All configurations are optional, device info is auto-detected
+
+# ==========================================
+# Agent Behavior Configuration
+# ==========================================
+
+agent:
+  max_steps: 30              # Maximum task steps
+  delay_after_action: 4.0    # Wait seconds after each step
+  verbose: true              # Show detailed logs
+  save_screenshots: true     # Save debug screenshots
+
+# ==========================================
+# Grid Configuration (Optional)
+# ==========================================
+
+# Uncomment to customize grid
+grid:
+  # Grid density (optional, auto-calculated if not specified)
+  cols: 10                 # Horizontal grid count (5-30)
+  rows: 20                 # Vertical grid count (10-50)
+  
+  # Grid style (optional)
+  line_color: [255, 0, 0]     # RGB: Red grid lines
+  line_width: 3               # Line thickness (1-10)
+  label_size: 32              # Label font size
+  label_color: [255, 255, 0]  # RGB: Yellow labels
+  
+  # Inner coordinate labels (optional)
+  show_inner_labels: true     # Show coordinate labels inside grid cells
+  inner_label_interval: 3     # Show label every N cells (1-10, 1=every cell, 2=every 2nd cell)
+  inner_label_opacity: 128    # Opacity for inner labels (50-255, lower is more transparent)
+
+# ==========================================
+# Claude API Configuration (Optional)
+# ==========================================
+
+# claude:
+#   model: "claude-opus-4-5-20251101"
+#   max_tokens: 2048
+#   temperature: 0.1          # 0-2, lower is more deterministic
+
+# ==========================================
+# 🤖 Auto-Detection (No Configuration Needed)
+# ==========================================
+# ✅ Device name (via ADB)
+# ✅ Screen size (via ADB wm size)
+# ✅ Grid density (auto-calculated unless manually specified cols/rows)
+# ✅ Cell size (auto-calculated)
+
+# ==========================================
+# 📝 Grid Density Examples
+# ==========================================
+# Coarse grid (fast, low precision):
+#   grid:
+#     cols: 8
+#     rows: 16
+#
+# Standard grid (balanced):
+#   grid:
+#     cols: 10    # Default auto-calculated value
+#     rows: 20
+#
+# Fine grid (slower, high precision):
+#   grid:
+#     cols: 15
+#     rows: 30
+#
+# Ultra-fine grid (most precise):
+#   grid:
+#     cols: 20
+#     rows: 40
